@@ -33,7 +33,6 @@ RUN [ "bash", "-x", "/tmp/scripts/spark/install" ]
 RUN rm -rf /tmp/scripts
 
 # Switch to the user 185 for OpenShift usage
-USER 185
 
 # Make the default PWD somewhere that the user can write. This is
 # useful when connecting with 'oc run' and starting a 'spark-shell',
