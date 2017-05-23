@@ -3,8 +3,8 @@ FROM centos:latest
 MAINTAINER Matthew Farrellee <matt@cs.wisc.edu>
 
 USER root
-ARG DISTRO_LOC=http://mirrors.aliyun.com/apache/spark/spark-2.1.1/spark-2.1.1-bin-hadoop2.7.tgz
-ARG DISTRO_NAME=spark-2.1.1-bin-hadoop2.7
+ARG DISTRO_LOC=http://mirrors.aliyun.com/apache/spark/spark-1.6.3/spark-1.6.3-bin-hadoop2.6.tgz
+ARG DISTRO_NAME=spark-1.6.3-bin-hadoop2.6
 
 RUN yum install -y epel-release tar java && \
     yum clean all
